@@ -1,26 +1,21 @@
 :root{
 
-    --pink:#F8D7E8;
+    --pink:#f8d7e8;
 
-    --rose-gold:#C98B8B;
+    --rose:#c98b8b;
 
-    --dark:#3E3E3E;
+    --dark:#3e3e3e;
 
-    --white:#FFFFFF;
+    --white:#ffffff;
 
-    --space-small:0.5rem;
+    --small:0.5rem;
 
-    --space-medium:1rem;
+    --medium:1rem;
 
-    --space-large:2rem;
+    --large:2rem;
 
 }
-
-*,
-
-*::before,
-
-*::after{
+*{
 
     margin:0;
 
@@ -29,101 +24,6 @@
     box-sizing:border-box;
 
 }
-
-html{
-
-    font-size:16px;
-
-}
-
-body{
-
-    font-family:vazirmatn, sans-serif;
-
-    color:var(--dark);
-
-    background-color:var(--white);
-
-}
-
-/* لوگو */
-header {
-    background-color: #F8D7E8;
-}
-header > a{
-
-    display:block;
-
-    text-align:right;
-
-    margin-bottom:var(--space-medium);
-    
-
-}
-
-header img{
-
-    width:10rem;
-
-    height:auto;
-
-}
-
-/* منو */
-
-nav ul{
-
-    list-style:none;
-
-    text-align:center;
-
-}
-
-nav li{
-
-    display:inline-block;
-
-    margin:0 var(--space-small);
-
-}
-
-nav a{
-
-    text-decoration:none;
-
-    color:var(--dark);
-
-    font-size:1rem;
-
-}
-nav a:hover {
-    color: #C98B8B;
-}
-.hero{
-
-min-height:100vh;
-
-display:flex;
-
-flex-direction:column;
-
-justify-content:center;
-
-align-items:center;
-
-text-align:center;
-
-padding:2rem;
-
-}
-.button {
-    background-color: var(--rose-gold);
-    color: white;
-    padding: 0.8rem 2rem;
-    border-radius: 5px;
-    text-decoration: none;
-
-}
-.button:hover {
-    background-color: #F8D7E8;
+html {
+    font-size: 16px;
 }

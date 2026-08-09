@@ -1,0 +1,201 @@
+```html
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ورود و ثبت نام | فروشگاه نفس</title>
+
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+    <main class="auth">
+
+        <header class="auth-header">
+            <h1>حساب کاربری</h1>
+            <p>برای ادامه وارد شوید یا حساب جدید ایجاد کنید.</p>
+        </header>
+
+
+        <section class="auth-container" aria-label="فرم ورود و ثبت نام">
+
+            <article class="auth-card login-card">
+
+                <header class="card-header">
+                    <h2>ورود به حساب کاربری</h2>
+
+                    <p>
+                        اگر قبلاً در فروشگاه نفس ثبت نام کرده‌اید،
+                        وارد حساب خود شوید.
+                    </p>
+                </header>
+
+                <form action="#" method="post">
+
+                    <fieldset>
+
+                        <legend>اطلاعات ورود</legend>
+
+                        <p class="form-group">
+                            <label for="login-email">
+                                ایمیل
+                            </label>
+
+                            <input
+                                type="email"
+                                id="login-email"
+                                name="email"
+                                placeholder="ایمیل خود را وارد کنید"
+                                autocomplete="email"
+                                required
+                            >
+                        </p>
+
+                        <p class="form-group">
+                            <label for="login-password">
+                                رمز عبور
+                            </label>
+
+                            <input
+                                type="password"
+                                id="login-password"
+                                name="password"
+                                placeholder="رمز عبور خود را وارد کنید"
+                                autocomplete="current-password"
+                                required
+                            >
+                        </p>
+
+                    </fieldset>
+
+                    <p class="form-options">
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="remember"
+                            >
+                            مرا به خاطر بسپار
+                        </label>
+
+                        <a href="#">
+                            فراموشی رمز عبور؟
+                        </a>
+
+                    </p>
+
+                    <button type="submit">
+                        ورود
+                    </button>
+
+                </form>
+
+            </article>
+
+
+            
+            <article class="auth-card register-card">
+
+                <header class="card-header">
+                    <h2>ایجاد حساب کاربری</h2>
+
+                    <p>
+                        برای خرید آسان‌تر و سریع‌تر،
+                        حساب کاربری خود را ایجاد کنید.
+                    </p>
+                </header>
+
+                <form action="#" method="post">
+
+                    <fieldset>
+
+                        <legend>اطلاعات ثبت نام</legend>
+
+                        <p class="form-group">
+                            <label for="register-name">
+                                نام و نام خانوادگی
+                            </label>
+
+                            <input
+                                type="text"
+                                id="register-name"
+                                name="name"
+                                placeholder="نام و نام خانوادگی"
+                                autocomplete="name"
+                                required
+                            >
+                        </p>
+
+                        <p class="form-group">
+                            <label for="register-email">
+                                ایمیل
+                            </label>
+
+                            <input
+                                type="email"
+                                id="register-email"
+                                name="email"
+                                placeholder="ایمیل خود را وارد کنید"
+                                autocomplete="email"
+                                required
+                            >
+                        </p>
+
+                        <p class="form-group">
+                            <label for="register-password">
+                                رمز عبور
+                            </label>
+
+                            <input
+                                type="password"
+                                id="register-password"
+                                name="password"
+                                placeholder="رمز عبور"
+                                autocomplete="new-password"
+                                required
+                            >
+                        </p>
+
+                        <p class="form-group">
+                            <label for="register-password-repeat">
+                                تکرار رمز عبور
+                            </label>
+
+                            <input
+                                type="password"
+                                id="register-password-repeat"
+                                name="password-repeat"
+                                placeholder="تکرار رمز عبور"
+                                autocomplete="new-password"
+                                required
+                            >
+                        </p>
+
+                    </fieldset>
+
+                    <button type="submit">
+                        ثبت نام
+                    </button>
+
+                </form>
+
+            </article>
+
+        </section>
+
+
+        <footer class="auth-footer">
+            <p>
+                © فروشگاه لوازم آرایشی و بهداشتی نفس
+            </p>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>

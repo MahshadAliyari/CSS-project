@@ -10,7 +10,7 @@
 
     <title>فروشگاه لوازم آرایشی نفس</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -18,41 +18,71 @@
 
 <header>
 
-    <a href="#">
-
-        <img src="images/logo.png" alt="لوگوی فروشگاه نفس">
-
+    <a href="#" class="logo">
+        <img
+            src="images/nafas_beauty_logo_header (1).svg"
+            alt="لوگوی فروشگاه نفس"
+        >
     </a>
 
-    <nav>
+    <form class="search-form">
+
+        <label for="search">
+            جستجوی محصولات
+        </label>
+
+        <input
+            type="search"
+            id="search"
+            name="search"
+            placeholder="جستجوی محصولات..."
+        >
+
+        <button type="submit">
+            جستجو
+        </button>
+
+    </form>
+
+    <nav class="main-nav" aria-label="منوی اصلی">
 
         <ul>
 
             <li>
-
                 <a href="#">خانه</a>
-
             </li>
 
             <li>
-
                 <a href="#">محصولات</a>
-
             </li>
 
             <li>
-
                 <a href="#">برندها</a>
-
             </li>
 
             <li>
-
                 <a href="#">درباره ما</a>
-
             </li>
 
         </ul>
+
+    </nav>
+
+    <nav class="user-actions" aria-label="دسترسی کاربر">
+
+        <a href="login.html" aria-label="ورود">
+            <img
+                src="images/user-single.svg"
+                alt="ورود"
+            >
+        </a>
+
+        <a href="#" aria-label="سبد خرید">
+            <img
+                src="images/hand-bag.svg"
+                alt="سبد خرید"
+            >
+        </a>
 
     </nav>
 
@@ -61,24 +91,9 @@
 <main>
 
 <section class="hero">
+    
 
-    <h1>
-
-        زیبایی طبیعی با محصولات نفس
-
-    </h1>
-
-    <p>
-
-        فروشگاه تخصصی لوازم آرایشی و مراقبت پوست
-
-    </p>
-
-    <a href="#" class="button">
-
-        مشاهده محصولات
-
-    </a>
+    
 
 </section>
 
@@ -92,7 +107,7 @@
 
     <article class="card">
 
-        <img src="images/product1.jpg" alt="کرم صورت">
+        <img src="images/10-2-MHI-Age-Reverse-Night-Face-Cream-50-ml-20266417412417.jpg" alt="کرم صورت">
 
         <h3>
 
@@ -116,7 +131,7 @@
 
     <article class="card">
 
-        <img src="images/product2.jpg" alt="رژ لب">
+        <img src="images/15581-202412413116394.jpg" alt="رژ لب">
 
         <h3>
 
@@ -140,7 +155,7 @@
 
     <article class="card">
 
-        <img src="images/product3.jpg" alt="عطر">
+        <img src="images/84184-202412310031924.jpg" alt="عطر">
 
         <h3>
 
@@ -166,17 +181,16 @@
 
 <section class="gallery">
 
-<h2>
+<h4>
 
 گالری محصولات
 
-</h2>
+</h4>
 
-<img src="images/gallery1.jpg" alt="محصول آرایشی">
+<img src="images/p1.jpg" alt="محصول آرایشی">
+<img src="images/download (8).jpg" alt="محصول زیبایی">
+<img src="images/22.jpg" alt="محصول پوستی">
 
-<img src="images/gallery2.jpg" alt="محصول پوستی">
-
-<img src="images/gallery3.jpg" alt="محصول زیبایی">
 
 </section>
 
@@ -258,7 +272,7 @@
 
 <section class="profile">
 
-<img src="images/profile.jpg" alt="تصویر مشاور زیبایی">
+<img src="images/d6929e7367134ed39d89eb7c75091aab.png" alt="تصویر مشاور زیبایی">
 
 <h2>
 
@@ -329,12 +343,10 @@
 درباره نفس
 
 </h3>
-
 <p>
-
-فروشگاه آنلاین محصولات آرایشی و مراقبتی
-
+فروشگاه لوازم آرایشی و بهداشتی نفس مکانی است برای همه افراد تا بتوانند با اطمینان کامل، مناسب‌ترین و بهترین محصولات انواع برندهای موجود در بازار را تهیه کنند. همچنین نفس در جهت احترام به حقوق مصرف کنندگان امکان خرید از فروشگاه‌های متعدد با محصولات متنوع‌تر را نیز، برای شما فراهم آورده است.
 </p>
+
 
 </section>
 
@@ -351,32 +363,33 @@
 محصولات
 
 </a>
-
 <a href="#">
 
-تماس
+برندها
 
 </a>
-
+<a href="#">
+    درباره ما
+</a>
 </section>
 
 <section>
 
 <h3>
 
-ارتباط
+ارتباط با ما
 
 </h3>
 
 <p>
 
-Email: info@example.com
+ info@nafasbeauty.com
 
 </p>
 
 <p>
 
-GitHub: github.com
+021-12345678
 
 </p>
 

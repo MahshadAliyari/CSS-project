@@ -73,7 +73,7 @@ body {
 
     direction: rtl;
 
-    font-family:  Arial, sans-serif;
+    font-family:Arial, sans-serif;
 
       background-color: var(--background);
     color: var(--dark);
@@ -452,7 +452,7 @@ main > section:first-child article {
 }
 
 main > section:first-child h1 {
-    color: var(--dark);
+    color:var(--primary);
 
     max-width: 100%;
 }
@@ -1066,7 +1066,7 @@ footer address {
         font-size: 2.5rem;
         line-height: 1.5;
 
-        color: #333;
+        color: #2d2c2c;
     }
 
     .hero button {
@@ -1458,5 +1458,819 @@ footer {
 
 
 }
+/* =========================================
+   FINAL VISUAL IMPROVEMENTS
+   ========================================= */
 
+
+/* =========================================
+   1. GENERAL SPACING
+   ========================================= */
+
+main > section {
+    margin-bottom: 1rem;
+}
+
+main > section > h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+
+/* =========================================
+   2. HEADER
+   ========================================= */
+
+header {
+    min-height: 70px;
+
+    padding: 0.8rem 1rem;
+
+    border-bottom: 1px solid var(--border);
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+
+/* LOGO */
+
+.logo {
+    width: 100px;
+    max-width: 100px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+
+/* USER ICONS */
+
+.user-actions {
+    gap: 0.7rem;
+}
+
+.user-actions a {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+}
+
+.user-actions img {
+    width: 26px;
+    height: 26px;
+}
+
+
+/* =========================================
+   3. SEARCH
+   ========================================= */
+
+.search-form {
+    gap: 0.5rem;
+}
+
+.search-form input {
+    height: 42px;
+
+    border: 1px solid var(--border);
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.search-form input:focus {
+    border-color: var(--primary);
+
+    box-shadow:
+        0 0 0 3px rgba(214, 111, 140, 0.12);
+}
+
+.search-form button {
+    height: 42px;
+
+    padding: 0 1.2rem;
+}
+
+
+/* =========================================
+   4. NAVIGATION
+   ========================================= */
+
+.main-nav ul {
+    gap: 1rem;
+}
+
+.main-nav a {
+    font-size: 0.9rem;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.main-nav a:hover {
+    color: var(--primary);
+
+    background-color: var(--pink-light);
+}
+
+
+/* =========================================
+   5. HERO
+   ========================================= */
+
+main > section:first-child {
+    margin-top: 1.5rem;
+
+    padding: 2rem 1rem;
+}
+
+.hero {
+    margin: 1rem auto 2.5rem;
+
+    border-radius: var(--radius);
+
+    overflow: hidden;
+}
+
+.hero-content {
+    border-radius: var(--radius);
+
+    box-shadow:
+        0 0.5rem 2rem rgba(0, 0, 0, 0.08);
+}
+
+.hero h1 {
+    margin-bottom: 1rem;
+}
+
+.hero button {
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.hero button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0.4rem 1rem rgba(214, 111, 140, 0.25);
+}
+
+
+/* =========================================
+   6. PRODUCTS
+   ========================================= */
+
+main > section:nth-of-type(2) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+main > section:nth-of-type(2) > h2 {
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    padding: 1.2rem;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    box-shadow:
+        0 0.25rem 1rem rgba(0, 0, 0, 0.07);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 0.7rem 1.5rem rgba(0, 0, 0, 0.12);
+}
+
+.card > img {
+    width: 100%;
+    max-width: 14rem;
+
+    height: 14rem;
+
+    object-fit: contain;
+}
+
+.card h3 {
+    font-size: 1rem;
+
+    margin-top: 0.3rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+
+    color: var(--primary-dark);
+}
+
+.card button {
+    min-height: 42px;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.card button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0.3rem 0.8rem rgba(214, 111, 140, 0.2);
+}
+
+
+/* =========================================
+   7. GALLERY
+   ========================================= */
+
+main > section:nth-of-type(3) {
+    margin-top: 1rem;
+
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+
+    border-radius: var(--radius);
+}
+
+main > section:nth-of-type(3) > h2 {
+    margin-bottom: 1.5rem;
+}
+
+main > section:nth-of-type(3) article {
+    border-radius: var(--radius);
+
+    overflow: hidden;
+
+    background-color: transparent;
+
+    box-shadow: none;
+}
+
+.gallery-link {
+    overflow: hidden;
+
+    border-radius: var(--radius);
+}
+
+.gallery img {
+    width: 100%;
+
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: var(--radius);
+
+    transition:
+        transform 0.4s ease,
+        filter 0.4s ease;
+}
+
+.gallery a:hover img {
+    transform: scale(1.04);
+
+    filter: brightness(0.95);
+}
+
+.gallery h3 {
+    margin-top: 0.7rem;
+
+    font-size: 0.95rem;
+
+    text-decoration: none;
+
+    color: var(--dark);
+
+    transition: color 0.2s ease;
+}
+
+.gallery a:hover h3 {
+    color: var(--primary);
+}
+
+
+/* =========================================
+   8. SPECIAL OFFERS
+   ========================================= */
+
+main > section:nth-of-type(4) {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+main > section:nth-of-type(4) > h2 {
+    margin-bottom: 1.5rem;
+}
+
+main > section:nth-of-type(4) article {
+    min-height: 190px;
+
+    padding: 1.7rem 1rem;
+
+    border-radius: var(--radius);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+main > section:nth-of-type(4) article:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 0.6rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+main > section:nth-of-type(4) h3 {
+    font-size: 1rem;
+}
+
+main > section:nth-of-type(4) a {
+    min-width: 70px;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+main > section:nth-of-type(4) a:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   9. BEAUTY CONSULTANT
+   ========================================= */
+
+main > section:nth-of-type(5) {
+    margin-top: 1rem;
+
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    gap: 1rem;
+}
+
+main > section:nth-of-type(5) figure {
+    width: 9rem;
+    height: 9rem;
+
+    padding: 0.3rem;
+
+    border-radius: 50%;
+
+    background-color: var(--white);
+
+    box-shadow:
+        0 0.3rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+main > section:nth-of-type(5) figure img {
+    border-radius: 50%;
+}
+
+main > section:nth-of-type(5) h2 {
+    margin-top: 0.5rem;
+}
+
+main > section:nth-of-type(5) p {
+    max-width: 35rem;
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================================
+   10. CONTACT FORM
+   ========================================= */
+
+main > section.contact {
+    width: 100%;
+
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    padding: 3rem 1rem;
+}
+
+.contact h2 {
+    margin-bottom: 0.7rem;
+}
+
+.contact form {
+    width: 100%;
+
+    max-width: 600px;
+
+    margin: 1.5rem auto 0;
+
+    padding: 1.5rem;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    background-color: var(--surface);
+
+    box-shadow:
+        0 0.4rem 1.5rem rgba(0, 0, 0, 0.06);
+}
+
+.contact label {
+    margin-top: 0.5rem;
+
+    font-size: 0.9rem;
+
+    color: var(--dark);
+}
+
+.contact input,
+.contact textarea {
+    min-height: 44px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 0.6rem;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.contact textarea {
+    min-height: 140px;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border-color: var(--primary);
+
+    box-shadow:
+        0 0 0 3px rgba(214, 111, 140, 0.15);
+}
+
+.contact button {
+    min-height: 44px;
+
+    margin-top: 0.5rem;
+
+    border-radius: 0.7rem;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.contact button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0.4rem 1rem rgba(214, 111, 140, 0.2);
+}
+
+
+/* =========================================
+   11. FOOTER
+   ========================================= */
+
+footer {
+    margin-top: 2rem;
+
+    padding: 3rem 1.5rem 2rem;
+
+    background-color: #333333;
+
+    color: var(--white);
+
+    border-top: none;
+}
+
+footer section,
+footer nav,
+footer address {
+    gap: 0.8rem;
+}
+
+footer h2,
+footer h3,
+footer h4 {
+    color: #f0b6c8;
+
+    margin-bottom: 0.7rem;
+}
+
+footer p,
+footer a {
+    font-size: 0.9rem;
+
+    line-height: 1.9;
+
+    color: #dddddd;
+}
+
+footer a:hover {
+    color: #f0b6c8;
+}
+
+
+/* =========================================
+   12. DESKTOP / LAPTOP
+   ========================================= */
+
+@media (min-width: 768px) {
+
+    /* HEADER */
+
+    header {
+        min-height: 70px;
+
+        padding: 0.8rem 3rem;
+
+        gap: 1.5rem;
+    }
+
+    .logo {
+        width: 130px;
+        max-width: 130px;
+    }
+
+    .logo img {
+        width: 130px;
+    }
+
+    .main-nav ul {
+        gap: 1.5rem;
+    }
+
+    .main-nav a {
+        font-size: 0.9rem;
+    }
+
+    .user-actions {
+        gap: 0.8rem;
+    }
+
+    .user-actions a {
+        width: 42px;
+        height: 42px;
+    }
+
+    /* HERO */
+
+    main > section:first-child {
+        margin-top: 1.5rem;
+
+        padding: 1rem;
+    }
+
+    .hero {
+        width: 90%;
+
+        max-width: 1200px;
+
+        height: 450px;
+
+        margin: 1rem auto 3rem;
+
+        border-radius: var(--radius);
+
+        overflow: hidden;
+    }
+
+    .hero-content {
+        width: 50%;
+
+        min-height: 80%;
+
+        padding: 2.5rem;
+
+        border-radius: 0.8rem;
+    }
+
+    .hero h1 {
+        font-size: 2.3rem;
+
+        margin-bottom: 1rem;
+    }
+
+    .hero-label {
+        font-size: 0.95rem;
+    }
+
+    .hero button {
+        width: 200px;
+
+        padding: 0.8rem 1rem;
+    }
+
+
+    /* PRODUCTS */
+
+    main > section:nth-of-type(2) {
+        max-width: 1200px;
+
+        padding: 2.5rem 2rem 3rem;
+
+        gap: 1.5rem;
+    }
+
+    main > section:nth-of-type(2) > h2 {
+        margin-bottom: 1rem;
+    }
+
+    .card {
+        min-height: 350px;
+
+        padding: 1.3rem;
+    }
+
+    .card > img {
+        width: 100%;
+
+        max-width: 14rem;
+
+        height: 14rem;
+    }
+
+
+    /* GALLERY */
+
+    main > section:nth-of-type(3) {
+        padding: 3rem 5%;
+
+        gap: 1.2rem;
+    }
+
+    main > section:nth-of-type(3) article img,
+    .gallery img {
+        height: 190px;
+    }
+
+    .gallery h3 {
+        margin-top: 0.8rem;
+
+        font-size: 0.95rem;
+    }
+
+
+    /* OFFERS */
+
+    main > section:nth-of-type(4) {
+        max-width: 1200px;
+
+        padding: 3rem 2rem;
+
+        gap: 1.5rem;
+    }
+
+    main > section:nth-of-type(4) article {
+        min-height: 200px;
+
+        padding: 2rem 1.5rem;
+    }
+
+
+    /* CONSULTANT */
+
+    main > section:nth-of-type(5) {
+        padding: 3rem 2rem 3.5rem;
+    }
+
+    main > section:nth-of-type(5) figure {
+        width: 10rem;
+        height: 10rem;
+    }
+
+
+    /* CONTACT */
+
+    main > section.contact {
+        max-width: 750px;
+
+        padding: 3rem 2rem 4rem;
+    }
+
+    .contact form {
+        padding: 2rem;
+
+        box-shadow:
+            0 0.5rem 1.5rem rgba(0, 0, 0, 0.07);
+    }
+
+    .contact h2 {
+        font-size: 1.6rem;
+
+        margin-bottom: 0.5rem;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 3.5rem 5% 2.5rem;
+
+        grid-template-columns:
+            1.2fr
+            0.8fr
+            1fr;
+
+        gap: 3rem;
+
+        text-align: right;
+
+        align-items: start;
+    }
+
+    footer section,
+    footer nav,
+    footer address {
+        align-items: flex-start;
+
+        text-align: right;
+    }
+
+    footer nav ul {
+        align-items: flex-start;
+
+        gap: 0.7rem;
+    }
+
+    footer h2,
+    footer h3,
+    footer h4 {
+        margin-bottom: 1rem;
+    }
+
+    footer p,
+    footer a {
+        font-size: 0.9rem;
+
+        line-height: 1.9;
+    }
+}
+
+
+/* =========================================
+   13. LARGE DESKTOP
+   ========================================= */
+
+@media (min-width: 1200px) {
+
+    header {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .hero {
+        height: 470px;
+    }
+
+    .hero-content {
+        width: 48%;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    main > section:nth-of-type(2),
+    main > section:nth-of-type(4) {
+        max-width: 1200px;
+    }
+
+    .card > img {
+        max-width: 15rem;
+
+        height: 15rem;
+    }
+
+    main > section:nth-of-type(3) article img,
+    .gallery img {
+        height: 210px;
+    }
+
+    footer {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+}
 

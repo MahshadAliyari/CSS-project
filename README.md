@@ -41,4 +41,4 @@ The website focuses on clean layouts, soft colors, product presentation, and eas
 
 ## Live Demo
 
- https://mahshadaliyari.github.io/my-page/
+  https://mahshadaliyari.github.io/CSS-project/

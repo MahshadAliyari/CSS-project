@@ -4,7 +4,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*  DARK MODE */
 
+@media (prefers-color-scheme: dark) {
+
+    :root {
+        --primary: #e58ba5;
+        --primary-dark: #c96b87;
+
+        --pink-light: #302329;
+        --pink-soft: #49303a;
+
+        --dark: #f5f5f5;
+        --text: #cccccc;
+        --white: #ffffff;
+
+        --background: #1e1e1e;
+        --surface: #2a2a2a;
+
+        --border: #444444;
+
+        --shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.3);
+    }
+
+}
 
 body {
     font-family: Arial, sans-serif;

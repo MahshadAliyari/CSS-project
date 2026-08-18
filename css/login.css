@@ -18,6 +18,59 @@ body {
 }
 
 
+.site-header {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 1rem;
+
+    padding: 1rem;
+
+    background-color: #ffffff;
+
+    border-bottom: 1px solid #eee;
+}
+
+
+.main-nav {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 1rem;
+}
+
+
+.main-nav a {
+    font-size: 0.95rem;
+
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+
+.main-nav a:hover {
+    color: #c85c82;
+}
+
+
+.main-nav a[aria-current="page"] {
+    color: #c85c82;
+
+    font-weight: bold;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+
+    color: #c85c82;
+}
 .auth {
     width: 100%;
     max-width: 1000px;

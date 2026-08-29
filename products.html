@@ -1,615 +1,352 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fa" dir="rtl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>محصولات | فروشگاه لوازم آرایشی نفس</title>
 
-    <link rel="stylesheet" href="css/products.css">
-</head>
+    <link rel="stylesheet" href="css/products.css" />
+  </head>
 
-<body>
-
+  <body>
     <header class="site-header">
+      <a href="index.html" class="logo">
+        <img
+          src="images/nafas_beauty_logo_header (1).svg"
+          alt="لوگوی فروشگاه نفس"
+        />
+      </a>
 
-        <a href="index.html" class="logo">
-            <img
-                src="images/nafas_beauty_logo_header (1).svg"
-                alt="لوگوی فروشگاه نفس"
-            >
-        </a>
+      <form class="search-form">
+        <label for="search"> جستجوی محصولات </label>
 
-        <form class="search-form">
+        <input
+          type="search"
+          id="search"
+          name="search"
+          placeholder="جستجوی محصول..."
+        />
 
-            <label for="search">
-                جستجوی محصولات
-            </label>
+        <button type="submit">جستجو</button>
+      </form>
 
-            <input
-                type="search"
-                id="search"
-                name="search"
-                placeholder="جستجوی محصول..."
-            >
-
-            <button type="submit">
-                جستجو
-            </button>
-
-        </form>
-
-        <nav class="main-nav" aria-label="منوی اصلی">
-
-            <a href="index.html">خانه</a>
-            <a href="products.html">محصولات</a>
-            <a href="about.html">درباره ما</a>
-            <a href="contact (2).html">تماس با ما</a>
-
-        </nav>
-
+      <nav class="main-nav" aria-label="منوی اصلی">
+        <a href="index.html">خانه</a>
+        <a href="products.html">محصولات</a>
+        <a href="about.html">درباره ما</a>
+        <a href="contact (2).html">تماس با ما</a>
+      </nav>
     </header>
 
-
     <main>
+      <section class="products-page">
+        <header class="products-header">
+          <p class="breadcrumb">خانه / محصولات</p>
 
-        <section class="products-page">
+          <h1>محصولات فروشگاه نفس</h1>
 
-            <header class="products-header">
+          <p>محصولات آرایشی و بهداشتی با کیفیت برای زیبایی و مراقبت از شما</p>
+        </header>
 
-                <p class="breadcrumb">
-                    خانه / محصولات
-                </p>
+        <section class="products-layout">
+          <aside class="filters">
+            <h2>فیلتر محصولات</h2>
 
-                <h1>
-                    محصولات فروشگاه نفس
-                </h1>
+            <details open>
+              <summary>دسته‌بندی</summary>
 
-                <p>
-                    محصولات آرایشی و بهداشتی با کیفیت برای زیبایی و مراقبت از شما
-                </p>
+              <nav aria-label="دسته‌بندی محصولات">
+                <a href="#"> مراقبت از پوست </a>
 
+                <a href="#"> مراقبت از مو </a>
+
+                <a href="#"> آرایش صورت </a>
+
+                <a href="#"> آرایش چشم </a>
+
+                <a href="#"> عطر و ادکلن </a>
+              </nav>
+            </details>
+
+            <details>
+              <summary>برند</summary>
+
+              <label>
+                <input type="checkbox" name="brand" value="brand1" />
+                برند ایرانی
+              </label>
+
+              <label>
+                <input type="checkbox" name="brand" value="brand2" />
+                برند خارجی
+              </label>
+            </details>
+
+            <details>
+              <summary>محدوده قیمت</summary>
+
+              <label for="min-price"> حداقل قیمت </label>
+
+              <input
+                type="number"
+                id="min-price"
+                name="min-price"
+                placeholder="۰ تومان"
+              />
+
+              <label for="max-price"> حداکثر قیمت </label>
+
+              <input
+                type="number"
+                id="max-price"
+                name="max-price"
+                placeholder="۵,۰۰۰,۰۰۰ تومان"
+              />
+            </details>
+
+            <details>
+              <summary>نوع محصول</summary>
+
+              <label>
+                <input type="checkbox" name="type" />
+                کرم
+              </label>
+
+              <label>
+                <input type="checkbox" name="type" />
+                شامپو
+              </label>
+
+              <label>
+                <input type="checkbox" name="type" />
+                ماسک
+              </label>
+
+              <label>
+                <input type="checkbox" name="type" />
+                سرم
+              </label>
+            </details>
+          </aside>
+
+          <section class="products-section">
+            <header class="products-toolbar">
+              <p>
+                <strong>محصولات</strong>
+                <span>۲۴ محصول</span>
+              </p>
+
+              <label for="sort"> مرتب‌سازی </label>
+
+              <select id="sort" name="sort">
+                <option value="newest">جدیدترین</option>
+
+                <option value="cheap">ارزان‌ترین</option>
+
+                <option value="expensive">گران‌ترین</option>
+
+                <option value="popular">پرفروش‌ترین</option>
+              </select>
             </header>
 
+            <section class="product-grid">
+              <article class="product-card">
+                <a href="#" class="product-link">
+                  <figure>
+                    <img src="images/n.jpg" alt="کرم مراقبت از پوست" />
 
-            <section class="products-layout">
+                    <figcaption>محصولات مراقبت از پوست</figcaption>
+                  </figure>
 
-                <aside class="filters">
+                  <p class="product-brand">نفس</p>
 
-                    <h2>
-                        فیلتر محصولات
-                    </h2>
+                  <h2>کرم مرطوب کننده و آبرسان پوست</h2>
 
+                  <p class="product-description">
+                    مناسب استفاده روزانه برای انواع پوست
+                  </p>
 
-                    <details open>
+                  <footer class="product-price">
+                    <del> ۵۵۰,۰۰۰ تومان </del>
 
-                        <summary>
-                            دسته‌بندی
-                        </summary>
+                    <strong> ۴۲۰,۰۰۰ تومان </strong>
 
-                        <nav aria-label="دسته‌بندی محصولات">
+                    <span class="discount"> ۲۴٪ </span>
+                  </footer>
+                </a>
+                <button class="add-to-cart" type="button">
+                  افزودن به سبد خرید
+                </button>
+              </article>
 
-                            <a href="#">
-                                مراقبت از پوست
-                            </a>
+              <article class="product-card">
+                <a href="#" class="product-link">
+                  <figure>
+                    <img src="images/i.jpg" alt="محصول مراقبت از مو" />
 
-                            <a href="#">
-                                مراقبت از مو
-                            </a>
+                    <figcaption>مراقبت از مو</figcaption>
+                  </figure>
 
-                            <a href="#">
-                                آرایش صورت
-                            </a>
+                  <p class="product-brand">لافارر</p>
 
-                            <a href="#">
-                                آرایش چشم
-                            </a>
+                  <h2>شامپو تقویت کننده و ضد ریزش مو</h2>
 
-                            <a href="#">
-                                عطر و ادکلن
-                            </a>
+                  <p class="product-description">
+                    مناسب موهای ضعیف و آسیب دیده
+                  </p>
 
-                        </nav>
+                  <footer class="product-price">
+                    <del> ۶۵۰,۰۰۰ تومان </del>
 
-                    </details>
+                    <strong> ۵۲۰,۰۰۰ تومان </strong>
 
+                    <span class="discount"> ۲۰٪ </span>
+                  </footer>
+                </a>
+                <button class="add-to-cart" type="button">
+                  افزودن به سبد خرید
+                </button>
+              </article>
 
-                    <details>
+              <article class="product-card">
+                <a href="#" class="product-link">
+                  <figure>
+                    <img src="images/mask.jpg" alt="ماسک صورت" />
 
-                        <summary>
-                            برند
-                        </summary>
+                    <figcaption>مراقبت از پوست</figcaption>
+                  </figure>
 
-                        <label>
-                            <input type="checkbox" name="brand" value="brand1">
-                            برند ایرانی
-                        </label>
+                  <p class="product-brand">نوتروژینا</p>
 
-                        <label>
-                            <input type="checkbox" name="brand" value="brand2">
-                            برند خارجی
-                        </label>
+                  <h2>ماسک صورت آبرسان و روشن کننده</h2>
 
-                    </details>
+                  <p class="product-description">کمک به شادابی و لطافت پوست</p>
 
+                  <footer class="product-price">
+                    <del> ۴۸۰,۰۰۰ تومان </del>
 
-                    <details>
+                    <strong> ۳۸۰,۰۰۰ تومان </strong>
 
-                        <summary>
-                            محدوده قیمت
-                        </summary>
+                    <span class="discount"> ۲۱٪ </span>
+                  </footer>
+                </a>
+                <button class="add-to-cart" type="button">
+                  افزودن به سبد خرید
+                </button>
+              </article>
 
-                        <label for="min-price">
-                            حداقل قیمت
-                        </label>
+              <article class="product-card">
+                <a href="#" class="product-link">
+                  <figure>
+                    <img src="images/m.jpg" alt="سرم مراقبت از پوست" />
 
-                        <input
-                            type="number"
-                            id="min-price"
-                            name="min-price"
-                            placeholder="۰ تومان"
-                        >
+                    <figcaption>سرم پوست</figcaption>
+                  </figure>
 
-                        <label for="max-price">
-                            حداکثر قیمت
-                        </label>
+                  <p class="product-brand">اوردینری</p>
 
-                        <input
-                            type="number"
-                            id="max-price"
-                            name="max-price"
-                            placeholder="۵,۰۰۰,۰۰۰ تومان"
-                        >
+                  <h2>سرم آبرسان و تقویت کننده پوست</h2>
 
-                    </details>
+                  <p class="product-description">مناسب برای استفاده روزانه</p>
 
+                  <footer class="product-price">
+                    <del> ۷۲۰,۰۰۰ تومان </del>
 
-                    <details>
+                    <strong> ۵۹۰,۰۰۰ تومان </strong>
 
-                        <summary>
-                            نوع محصول
-                        </summary>
+                    <span class="discount"> ۱۸٪ </span>
+                  </footer>
+                </a>
+                <button class="add-to-cart" type="button">
+                  افزودن به سبد خرید
+                </button>
+              </article>
 
-                        <label>
-                            <input type="checkbox" name="type">
-                            کرم
-                        </label>
+              <article class="product-card">
+                <a href="#" class="product-link">
+                  <figure>
+                    <img src="images/sun.jpg" alt="کرم ضد آفتاب" />
 
-                        <label>
-                            <input type="checkbox" name="type">
-                            شامپو
-                        </label>
+                    <figcaption>ضد آفتاب</figcaption>
+                  </figure>
 
-                        <label>
-                            <input type="checkbox" name="type">
-                            ماسک
-                        </label>
+                  <p class="product-brand">سینره</p>
 
-                        <label>
-                            <input type="checkbox" name="type">
-                            سرم
-                        </label>
+                  <h2>کرم ضد آفتاب مناسب انواع پوست</h2>
 
-                    </details>
+                  <p class="product-description">
+                    محافظت روزانه در برابر نور خورشید
+                  </p>
 
-                </aside>
+                  <footer class="product-price">
+                    <del> ۵۸۰,۰۰۰ تومان </del>
 
+                    <strong> ۴۶۰,۰۰۰ تومان </strong>
 
-                <section class="products-section">
+                    <span class="discount"> ۲۰٪ </span>
+                  </footer>
+                </a>
+                <button class="add-to-cart" type="button">
+                  افزودن به سبد خرید
+                </button>
+              </article>
 
-                    <header class="products-toolbar">
+              <article class="product-card">
+                <a href="#" class="product-link">
+                  <figure>
+                    <img src="images/moo.jpg" alt="ماسک مو" />
 
-                        <p>
-                            <strong>محصولات</strong>
-                            <span>۲۴ محصول</span>
-                        </p>
+                    <figcaption>مراقبت از مو</figcaption>
+                  </figure>
 
-                        <label for="sort">
-                            مرتب‌سازی
-                        </label>
+                  <p class="product-brand">بیوتروی</p>
 
-                        <select id="sort" name="sort">
+                  <h2>ماسک مو حاوی روغن آرگان</h2>
 
-                            <option value="newest">
-                                جدیدترین
-                            </option>
+                  <p class="product-description">مناسب موهای خشک و آسیب دیده</p>
 
-                            <option value="cheap">
-                                ارزان‌ترین
-                            </option>
+                  <footer class="product-price">
+                    <del> ۷۵۰,۰۰۰ تومان </del>
 
-                            <option value="expensive">
-                                گران‌ترین
-                            </option>
+                    <strong> ۶۰۰,۰۰۰ تومان </strong>
 
-                            <option value="popular">
-                                پرفروش‌ترین
-                            </option>
-
-                        </select>
-
-                    </header>
-
-
-                    <section class="product-grid">
-
-
-                        <article class="product-card">
-
-                            <a href="#" class="product-link">
-
-                                <figure>
-
-                                    <img
-                                        src="images/n.jpg"
-                                        alt="کرم مراقبت از پوست"
-                                    >
-
-                                    <figcaption>
-                                        محصولات مراقبت از پوست
-                                    </figcaption>
-
-                                </figure>
-
-                                <p class="product-brand">
-                                    نفس
-                                </p>
-
-                                <h2>
-                                    کرم مرطوب کننده و آبرسان پوست
-                                </h2>
-
-                                <p class="product-description">
-                                    مناسب استفاده روزانه برای انواع پوست
-                                </p>
-
-                                <footer class="product-price">
-
-                                    <del>
-                                        ۵۵۰,۰۰۰ تومان
-                                    </del>
-
-                                    <strong>
-                                        ۴۲۰,۰۰۰ تومان
-                                    </strong>
-
-                                    <span class="discount">
-                                        ۲۴٪
-                                    </span>
-
-                                </footer>
-
-                            </a>
-                            <button class="add-to-cart" type="button">
-    افزودن به سبد خرید
-</button>
-
-                        </article>
-
-
-                        <article class="product-card">
-
-                            <a href="#" class="product-link">
-
-                                <figure>
-
-                                    <img
-                                        src="images/i.jpg"
-                                        alt="محصول مراقبت از مو"
-                                    >
-
-                                    <figcaption>
-                                        مراقبت از مو
-                                    </figcaption>
-
-                                </figure>
-
-                                <p class="product-brand">
-                                    لافارر
-                                </p>
-
-                                <h2>
-                                    شامپو تقویت کننده و ضد ریزش مو
-                                </h2>
-
-                                <p class="product-description">
-                                    مناسب موهای ضعیف و آسیب دیده
-                                </p>
-
-                                <footer class="product-price">
-
-                                    <del>
-                                        ۶۵۰,۰۰۰ تومان
-                                    </del>
-
-                                    <strong>
-                                        ۵۲۰,۰۰۰ تومان
-                                    </strong>
-
-                                    <span class="discount">
-                                        ۲۰٪
-                                    </span>
-
-                                </footer>
-
-                            </a>
-                            <button class="add-to-cart" type="button">
-    افزودن به سبد خرید
-</button>
-
-                        </article>
-
-
-                        <article class="product-card">
-
-                            <a href="#" class="product-link">
-
-                                <figure>
-
-                                    <img
-                                        src="images/mask.jpg"
-                                        alt="ماسک صورت"
-                                    >
-
-                                    <figcaption>
-                                        مراقبت از پوست
-                                    </figcaption>
-
-                                </figure>
-
-                                <p class="product-brand">
-                                    نوتروژینا
-                                </p>
-
-                                <h2>
-                                    ماسک صورت آبرسان و روشن کننده
-                                </h2>
-
-                                <p class="product-description">
-                                    کمک به شادابی و لطافت پوست
-                                </p>
-
-                                <footer class="product-price">
-
-                                    <del>
-                                        ۴۸۰,۰۰۰ تومان
-                                    </del>
-
-                                    <strong>
-                                        ۳۸۰,۰۰۰ تومان
-                                    </strong>
-
-                                    <span class="discount">
-                                        ۲۱٪
-                                    </span>
-
-                                </footer>
-
-                            </a>
-                            <button class="add-to-cart" type="button">
-    افزودن به سبد خرید
-</button>
-
-                        </article>
-
-
-
-                        <article class="product-card">
-
-                            <a href="#" class="product-link">
-
-                                <figure>
-
-                                    <img
-                                        src="images/m.jpg"
-                                        alt="سرم مراقبت از پوست"
-                                    >
-
-                                    <figcaption>
-                                        سرم پوست
-                                    </figcaption>
-
-                                </figure>
-
-                                <p class="product-brand">
-                                    اوردینری
-                                </p>
-
-                                <h2>
-                                    سرم آبرسان و تقویت کننده پوست
-                                </h2>
-
-                                <p class="product-description">
-                                    مناسب برای استفاده روزانه
-                                </p>
-
-                                <footer class="product-price">
-
-                                    <del>
-                                        ۷۲۰,۰۰۰ تومان
-                                    </del>
-
-                                    <strong>
-                                        ۵۹۰,۰۰۰ تومان
-                                    </strong>
-
-                                    <span class="discount">
-                                        ۱۸٪
-                                    </span>
-
-                                </footer>
-
-                            </a>
-                            <button class="add-to-cart" type="button">
-    افزودن به سبد خرید
-</button>
-
-                        </article>
-
-
-
-                        <article class="product-card">
-
-                            <a href="#" class="product-link">
-
-                                <figure>
-
-                                    <img
-                                        src="images/sun.jpg"
-                                        alt="کرم ضد آفتاب"
-                                    >
-
-                                    <figcaption>
-                                        ضد آفتاب
-                                    </figcaption>
-
-                                </figure>
-
-                                <p class="product-brand">
-                                    سینره
-                                </p>
-
-                                <h2>
-                                    کرم ضد آفتاب مناسب انواع پوست
-                                </h2>
-
-                                <p class="product-description">
-                                    محافظت روزانه در برابر نور خورشید
-                                </p>
-
-                                <footer class="product-price">
-
-                                    <del>
-                                        ۵۸۰,۰۰۰ تومان
-                                    </del>
-
-                                    <strong>
-                                        ۴۶۰,۰۰۰ تومان
-                                    </strong>
-
-                                    <span class="discount">
-                                        ۲۰٪
-                                    </span>
-
-                                </footer>
-
-                            </a>
-                            <button class="add-to-cart" type="button">
-    افزودن به سبد خرید
-</button>
-
-                        </article>
-
-
-                        <article class="product-card">
-
-                            <a href="#" class="product-link">
-
-                                <figure>
-
-                                    <img
-                                        src="images/moo.jpg"
-                                        alt="ماسک مو"
-                                    >
-
-                                    <figcaption>
-                                        مراقبت از مو
-                                    </figcaption>
-
-                                </figure>
-
-                                <p class="product-brand">
-                                    بیوتروی
-                                </p>
-
-                                <h2>
-                                    ماسک مو حاوی روغن آرگان
-                                </h2>
-
-                                <p class="product-description">
-                                    مناسب موهای خشک و آسیب دیده
-                                </p>
-
-                                <footer class="product-price">
-
-                                    <del>
-                                        ۷۵۰,۰۰۰ تومان
-                                    </del>
-
-                                    <strong>
-                                        ۶۰۰,۰۰۰ تومان
-                                    </strong>
-
-                                    <span class="discount">
-                                        ۲۰٪
-                                    </span>
-
-                                </footer>
-
-                            </a>
-                            <button class="add-to-cart" type="button">
-    افزودن به سبد خرید
-</button>
-
-                        </article>
-
-
-                    </section>
-
-                </section>
-
+                    <span class="discount"> ۲۰٪ </span>
+                  </footer>
+                </a>
+                <button class="add-to-cart" type="button">
+                  افزودن به سبد خرید
+                </button>
+              </article>
             </section>
-
+          </section>
         </section>
-
+      </section>
     </main>
 
-
     <footer class="site-footer">
+      <section>
+        <h2>فروشگاه نفس</h2>
 
-        <section>
+        <p>مرجع محصولات آرایشی و بهداشتی با کیفیت</p>
+      </section>
 
-            <h2>
-                فروشگاه نفس
-            </h2>
+      <nav aria-label="لینک‌های مفید">
+        <h2>لینک‌های مفید</h2>
 
-            <p>
-                مرجع محصولات آرایشی و بهداشتی با کیفیت
-            </p>
+        <a href="index.html">خانه</a>
+        <a href="products.html">محصولات</a>
+        <a href="about.html">درباره ما</a>
+        <a href="contact (2).html">تماس با ما</a>
+      </nav>
 
-        </section>
+      <address>
+        <h2>تماس با ما</h2>
 
-        <nav aria-label="لینک‌های مفید">
+        <p>تلفن: ۰۲۱-۱۲۳۴۵۶۷۸</p>
 
-            <h2>
-                لینک‌های مفید
-            </h2>
-
-            <a href="index.html">خانه</a>
-            <a href="products.html">محصولات</a>
-            <a href="about.html">درباره ما</a>
-            <a href="contact (2).html">تماس با ما</a>
-
-        </nav>
-
-        <address>
-
-            <h2>
-                تماس با ما
-            </h2>
-
-            <p>
-                تلفن: ۰۲۱-۱۲۳۴۵۶۷۸
-            </p>
-
-            <p>
-                ایمیل: info@nafasbeauty.com
-            </p>
-
-        </address>
-
+        <p>ایمیل: info@nafasbeauty.com</p>
+      </address>
     </footer>
-
-</body>
+  </body>
 </html>

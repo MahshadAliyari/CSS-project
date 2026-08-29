@@ -42,3 +42,9 @@ The website focuses on clean layouts, soft colors, product presentation, and eas
 ## Live Demo
 
   https://mahshadaliyari.github.io/CSS-project/
+
+  ## AI Transparency
+
+- **Section:** Responsive breakpoints (media query sizing) and CSS Grid column layout.
+- **How I used it:** I first tried and tested breakpoint values myself, then asked the AI to suggest example sizes and explain the reasoning behind them for comparison. For the grid layout, I shared my existing HTML and asked the AI to review it and point out issues — without generating or rewriting the code itself.
+- **What I changed/decided myself:** I chose the final breakpoint values and grid structure myself; the AI was only used for feedback and comparison, not for producing the code.

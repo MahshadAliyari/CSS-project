@@ -48,3 +48,15 @@ The website focuses on clean layouts, soft colors, product presentation, and eas
 - **Section:** Responsive breakpoints (media query sizing) and CSS Grid column layout.
 - **How I used it:** I first tried and tested breakpoint values myself, then asked the AI to suggest example sizes and explain the reasoning behind them for comparison. For the grid layout, I shared my existing HTML and asked the AI to review it and point out issues — without generating or rewriting the code itself.
 - **What I changed/decided myself:** I chose the final breakpoint values and grid structure myself; the AI was only used for feedback and comparison, not for producing the code.
+
+# CSS Refactor
+
+By creating a shared `base.css` file and removing duplicated styles, the total CSS code was reduced from **5,433 lines to 3,860 lines**.
+
+## Result
+
+- **Before:** 5,433 lines
+- **After:** 3,860 lines
+- **Lines removed:** 1,573 lines
+
+This refactor made the CSS codebase more organized, reusable, and maintainable.

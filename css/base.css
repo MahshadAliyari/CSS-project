@@ -544,7 +544,7 @@ footer address {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
   header {
     padding-left: 4rem;
     padding-right: 4rem;

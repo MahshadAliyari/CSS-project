@@ -3,18 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>محصولات | فروشگاه لوازم آرایشی نفس</title>
 
     <link rel="stylesheet" href="css/base.css" />
-
     <link rel="stylesheet" href="css/products.css" />
   </head>
 
   <body>
+    <!-- Header -->
     <header>
       <a href="index.html" class="logo">
         <img
@@ -24,7 +28,7 @@
       </a>
 
       <form class="search-form">
-        <label for="search"> جستجوی محصولات </label>
+        <label for="search">جستجوی محصولات</label>
 
         <input
           type="search"
@@ -39,17 +43,34 @@
       <nav class="main-nav" aria-label="منوی اصلی">
         <ul>
           <li><a href="index.html">خانه</a></li>
-          <li><a href="products.html" aria-current="page">محصولات</a></li>
-          <li><a href="landingpage.html">چرا نفس؟</a></li>
-          <li><a href="about.html">درباره ما</a></li>
-          <li><a href="contact.html">تماس با ما</a></li>
-          <li><a href="login.html">ورود</a></li>
+
+          <li>
+            <a href="products.html" aria-current="page">محصولات</a>
+          </li>
+
+          <li>
+            <a href="landingpage.html">چرا نفس؟</a>
+          </li>
+
+          <li>
+            <a href="about.html">درباره ما</a>
+          </li>
+
+          <li>
+            <a href="contact.html">تماس با ما</a>
+          </li>
+
+          <li>
+            <a href="login.html">ورود</a>
+          </li>
         </ul>
       </nav>
     </header>
 
+    <!-- Main -->
     <main>
       <section class="products-page">
+        <!-- Products Header -->
         <header class="products-header">
           <p class="breadcrumb">خانه / محصولات</p>
 
@@ -58,40 +79,45 @@
           <p>محصولات آرایشی و بهداشتی با کیفیت برای زیبایی و مراقبت از شما</p>
         </header>
 
+        <!-- Products Layout -->
         <section class="products-layout">
+          <!-- Filters -->
           <aside class="filters">
             <h2>فیلتر محصولات</h2>
 
+            <!-- Category -->
             <details open>
               <summary>دسته‌بندی</summary>
 
               <nav aria-label="دسته‌بندی محصولات">
-                <a href="#"> مراقبت از پوست </a>
+                <a href="#" data-category="پوست"> مراقبت از پوست </a>
 
-                <a href="#"> مراقبت از مو </a>
+                <a href="#" data-category="مو"> مراقبت از مو </a>
 
-                <a href="#"> آرایش صورت </a>
+                <a href="#" data-category="صورت"> آرایش صورت </a>
 
-                <a href="#"> آرایش چشم </a>
+                <a href="#" data-category="چشم"> آرایش چشم </a>
 
-                <a href="#"> عطر و ادکلن </a>
+                <a href="#" data-category="عطر"> عطر و ادکلن </a>
               </nav>
             </details>
 
+            <!-- Brand -->
             <details>
               <summary>برند</summary>
 
               <label>
-                <input type="checkbox" name="brand" value="brand1" />
+                <input type="checkbox" name="brand" value="ایرانی" />
                 برند ایرانی
               </label>
 
               <label>
-                <input type="checkbox" name="brand" value="brand2" />
+                <input type="checkbox" name="brand" value="خارجی" />
                 برند خارجی
               </label>
             </details>
 
+            <!-- Price -->
             <details>
               <summary>محدوده قیمت</summary>
 
@@ -114,36 +140,45 @@
               />
             </details>
 
+            <!-- Type -->
             <details>
               <summary>نوع محصول</summary>
 
               <label>
-                <input type="checkbox" name="type" />
+                <input type="checkbox" name="type" value="کرم" />
                 کرم
               </label>
 
               <label>
-                <input type="checkbox" name="type" />
+                <input type="checkbox" name="type" value="شامپو" />
                 شامپو
               </label>
 
               <label>
-                <input type="checkbox" name="type" />
+                <input type="checkbox" name="type" value="ماسک" />
                 ماسک
               </label>
 
               <label>
-                <input type="checkbox" name="type" />
+                <input type="checkbox" name="type" value="سرم" />
                 سرم
               </label>
             </details>
+
+            <!-- Reset Button -->
+            <button type="button" class="reset-filters" id="resetFilters">
+              حذف همه فیلترها
+            </button>
           </aside>
 
+          <!-- Products Section -->
           <section class="products-section">
+            <!-- Toolbar -->
             <header class="products-toolbar">
               <p>
                 <strong>محصولات</strong>
-                <span>۲۴ محصول</span>
+
+                <span id="productCount"> ۶ محصول </span>
               </p>
 
               <label for="sort"> مرتب‌سازی </label>
@@ -159,8 +194,18 @@
               </select>
             </header>
 
-            <section class="product-grid">
-              <article class="product-card">
+            <!-- Product Grid -->
+            <section class="product-grid" id="productsGrid">
+              <!-- Product 1 -->
+              <article
+                class="product-card"
+                data-category="پوست"
+                data-brand="ایرانی"
+                data-type="کرم"
+                data-price="420000"
+                data-date="6"
+                data-popular="95"
+              >
                 <a href="#" class="product-link">
                   <figure>
                     <img src="images/n.jpg" alt="کرم مراقبت از پوست" />
@@ -184,12 +229,22 @@
                     <span class="discount"> ۲۴٪ </span>
                   </footer>
                 </a>
+
                 <button class="add-to-cart" type="button">
                   افزودن به سبد خرید
                 </button>
               </article>
 
-              <article class="product-card">
+              <!-- Product 2 -->
+              <article
+                class="product-card"
+                data-category="مو"
+                data-brand="ایرانی"
+                data-type="شامپو"
+                data-price="520000"
+                data-date="5"
+                data-popular="88"
+              >
                 <a href="#" class="product-link">
                   <figure>
                     <img src="images/i.jpg" alt="محصول مراقبت از مو" />
@@ -213,12 +268,22 @@
                     <span class="discount"> ۲۰٪ </span>
                   </footer>
                 </a>
+
                 <button class="add-to-cart" type="button">
                   افزودن به سبد خرید
                 </button>
               </article>
 
-              <article class="product-card">
+              <!-- Product 3 -->
+              <article
+                class="product-card"
+                data-category="پوست"
+                data-brand="خارجی"
+                data-type="ماسک"
+                data-price="380000"
+                data-date="4"
+                data-popular="92"
+              >
                 <a href="#" class="product-link">
                   <figure>
                     <img src="images/mask.jpg" alt="ماسک صورت" />
@@ -240,12 +305,22 @@
                     <span class="discount"> ۲۱٪ </span>
                   </footer>
                 </a>
+
                 <button class="add-to-cart" type="button">
                   افزودن به سبد خرید
                 </button>
               </article>
 
-              <article class="product-card">
+              <!-- Product 4 -->
+              <article
+                class="product-card"
+                data-category="پوست"
+                data-brand="خارجی"
+                data-type="سرم"
+                data-price="590000"
+                data-date="3"
+                data-popular="85"
+              >
                 <a href="#" class="product-link">
                   <figure>
                     <img src="images/m.jpg" alt="سرم مراقبت از پوست" />
@@ -267,12 +342,22 @@
                     <span class="discount"> ۱۸٪ </span>
                   </footer>
                 </a>
+
                 <button class="add-to-cart" type="button">
                   افزودن به سبد خرید
                 </button>
               </article>
 
-              <article class="product-card">
+              <!-- Product 5 -->
+              <article
+                class="product-card"
+                data-category="پوست"
+                data-brand="ایرانی"
+                data-type="کرم"
+                data-price="460000"
+                data-date="2"
+                data-popular="90"
+              >
                 <a href="#" class="product-link">
                   <figure>
                     <img src="images/sun.jpg" alt="کرم ضد آفتاب" />
@@ -296,12 +381,22 @@
                     <span class="discount"> ۲۰٪ </span>
                   </footer>
                 </a>
+
                 <button class="add-to-cart" type="button">
                   افزودن به سبد خرید
                 </button>
               </article>
 
-              <article class="product-card">
+              <!-- Product 6 -->
+              <article
+                class="product-card"
+                data-category="مو"
+                data-brand="خارجی"
+                data-type="ماسک"
+                data-price="600000"
+                data-date="1"
+                data-popular="82"
+              >
                 <a href="#" class="product-link">
                   <figure>
                     <img src="images/moo.jpg" alt="ماسک مو" />
@@ -323,16 +418,23 @@
                     <span class="discount"> ۲۰٪ </span>
                   </footer>
                 </a>
+
                 <button class="add-to-cart" type="button">
                   افزودن به سبد خرید
                 </button>
               </article>
             </section>
+
+            <!-- No Result Message -->
+            <p class="no-results" id="noResults" hidden>
+              محصولی با این مشخصات پیدا نشد.
+            </p>
           </section>
         </section>
       </section>
     </main>
 
+    <!-- Footer -->
     <footer class="site-footer">
       <section>
         <h2>فروشگاه نفس</h2>
@@ -344,8 +446,11 @@
         <h2>لینک‌های مفید</h2>
 
         <a href="index.html">خانه</a>
+
         <a href="products.html">محصولات</a>
+
         <a href="about.html">درباره ما</a>
+
         <a href="contact.html">تماس با ما</a>
       </nav>
 
@@ -357,5 +462,8 @@
         <p>ایمیل: info@nafasbeauty.com</p>
       </address>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="js/products.js"></script>
   </body>
 </html>
